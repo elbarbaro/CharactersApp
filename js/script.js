@@ -32,6 +32,7 @@ function launchRequestData(e){
 function launchRequestFile(){
 	var imageFile = txtImage.files[0];
 
+    // https://developer.mozilla.org/es/docs/Web/Guide/Usando_Objetos_FormData
 	var formData = new FormData();
 	formData.append("file", imageFile);
 
